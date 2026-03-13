@@ -346,7 +346,7 @@ export default function App() {
       <header className="fixed top-0 left-0 w-full z-50 glass py-4 lg:py-5">
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-10">
-            <div className="text-xl lg:text-2xl font-black tracking-tighter">NASIR<span className="text-indigo-500">.</span></div>
+            <div className="text-xl lg:text-2xl font-black tracking-tighter">NASIR SHAHZAD<span className="text-indigo-500">.</span></div>
             <div className="hidden lg:flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-slate-500 bg-white/5 px-4 py-2 rounded-full border border-white/5">
               <MapPin size={12} className="text-indigo-500" /> {CONFIG.location}
             </div>
@@ -401,7 +401,7 @@ export default function App() {
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="h-px w-8 bg-cyan-500" />
-                <div className="text-cyan-400 font-black uppercase tracking-[0.3em] text-[10px]">Senior Software Engineer</div>
+                <div className="text-cyan-400 font-black uppercase tracking-[0.3em] text-[10px]">Software Engineer</div>
               </div>
               <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black tracking-tighter leading-[1.1] lg:leading-[0.95] mb-8 lg:mb-12 text-gradient">
                 ARCHITECTING HIGH-PERFORMANCE<br className="hidden sm:block" /> BACKEND ECOSYSTEMS
@@ -422,8 +422,7 @@ export default function App() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-12">
                 {[
                   { label: "Years Industry Exp", value: "3.5+" },
-                  { label: "Key Enterprise Projects", value: "5" },
-                  { label: "Optimized Latency", value: "20ms" },
+                  { label: "Key Enterprise Projects", value: "8+" },
                   { label: "Cloud Practitioner", value: "AWS" }
                 ].map((stat, i) => (
                   <div key={i} className="relative group">
@@ -731,7 +730,7 @@ export default function App() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-12">
             <div className="text-center lg:text-left">
-              <div className="text-3xl font-black tracking-tighter mb-4 text-slate-100">NASIR<span className="text-indigo-500">.</span></div>
+              <div className="text-3xl font-black tracking-tighter mb-4 text-slate-100">NASIR SHAHZAD<span className="text-indigo-500">.</span></div>
               <p className="text-slate-500 text-sm font-bold uppercase tracking-widest">Architecting Excellence</p>
             </div>
             
