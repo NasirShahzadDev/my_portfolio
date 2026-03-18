@@ -46,7 +46,7 @@ const NavLinks = ({ className = "", onClick = () => {} }) => (
     <a
       href={`${import.meta.env.BASE_URL}${CONFIG.resumeUrl}`}
       download
-      className="px-5 py-2 rounded-full border border-indigo-500/30 text-indigo-400 hover:bg-indigo-500/10 transition-all flex items-center gap-2"
+      className="px-5 py-2 rounded-full border border-indigo-500/30 text-indigo-600 hover:bg-indigo-500 hover:text-white transition-all flex items-center gap-2"
     >
       Resume <Download size={14} />
     </a>
@@ -324,8 +324,8 @@ export default function App() {
                 <div className="relative aspect-square lg:aspect-[4/5] rounded-[2rem] lg:rounded-[3.5rem] overflow-hidden border border-slate-700 shadow-2xl bg-[#0a0f1e]">
                   <img
                     src={`${import.meta.env.BASE_URL}${CONFIG.profileImage}`}
-                    alt={CONFIG.name}
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
+                    alt={CONFIG.name} //////////
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover: transition-all duration-1000 scale-105 group-hover:scale-100 "
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1e]/90 via-transparent to-transparent opacity-80" />
@@ -353,8 +353,8 @@ export default function App() {
                 </div>
                 <h2 className="text-3xl lg:text-6xl font-black tracking-tighter text-white">
                   Professional Profile
+                  <div className="h-1 w-20  bg-gradient-to-r from-indigo-600 to-cyan-500  mt-4  rounded-full" />
                 </h2>
-                <div className="h-1 w-20 bg-gradient-to-r from-indigo-600 to-cyan-500 rounded-full" />
               </div>
               <p className="text-slate-300 text-base lg:text-xl leading-relaxed">
                 I am a dedicated Software Engineer with a passion for architecting robust backend
@@ -372,12 +372,12 @@ export default function App() {
                     value: CONFIG.location,
                     color: "text-indigo-400",
                   },
-                  {
-                    icon: Linkedin,
-                    label: "LinkedIn",
-                    value: "Nasir Shahzad",
-                    color: "text-cyan-400",
-                  },
+                  // {
+                  //   icon: Linkedin,
+                  //   label: "LinkedIn",
+                  //   value: "Nasir Shahzad",
+                  //   color: "text-cyan-400",
+                  // },
                 ].map((item, i) => (
                   <div
                     key={i}
@@ -389,7 +389,7 @@ export default function App() {
                       <item.icon size={18} />
                     </div>
                     <div className="min-w-0">
-                      <div className="text-[8px] lg:text-[9px] font-bold uppercase tracking-widest text-slate-500">
+                      <div className="text-[10px] lg:text-[12px] font-bold uppercase tracking-widest text-slate-500">
                         {item.label}
                       </div>
                       <div className="text-[10px] lg:text-sm font-bold text-slate-200 truncate">
@@ -415,8 +415,8 @@ export default function App() {
             </div>
             <h2 className="text-4xl lg:text-6xl font-black tracking-tighter mb-6 text-white">
               Engineering Highlights
+              <div className="h-1 w-20  bg-gradient-to-r from-indigo-600 to-cyan-500  mt-4  rounded-full" />{" "}
             </h2>
-            <div className="h-1 w-20 bg-cyan-600 rounded-full" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -497,8 +497,8 @@ export default function App() {
               </div>
               <h2 className="text-3xl lg:text-6xl font-black tracking-tighter mb-6 text-white">
                 Tools & Ecosystem
+                <div className="h-1 w-20  bg-gradient-to-r from-indigo-600 to-cyan-500  mt-4  rounded-full" />{" "}
               </h2>
-              <div className="h-1 w-20 bg-cyan-600 rounded-full" />
             </div>
             <p className="text-slate-400 text-sm lg:text-base max-w-md lg:text-right">
               Proficient in industry-standard tools for project management, code quality, and
@@ -541,9 +541,11 @@ export default function App() {
         <div className="absolute top-1/2 left-0 w-[40%] h-[40%] bg-cyan-600/10 blur-[150px] rounded-full -z-10" />
 
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl lg:text-6xl font-black tracking-tighter mb-16 lg:mb-24 text-white">
+          <h2 className="text-3xl lg:text-6xl font-black tracking-tighter mb-6 lg:mb-6 text-white">
             Professional Experience
+            <div className="h-1 w-20  bg-gradient-to-r from-indigo-600 to-cyan-500  mt-4  rounded-full" />{" "}
           </h2>
+
           <div className="space-y-8 lg:space-y-12">
             {EXPERIENCE.map((exp, i) => (
               <motion.div
@@ -603,7 +605,9 @@ export default function App() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 lg:mb-24 gap-8">
             <h2 className="text-3xl lg:text-6xl font-black tracking-tighter max-w-2xl text-white">
               Key Projects
+              <div className="h-1 w-20  bg-gradient-to-r from-indigo-600 to-cyan-500  mt-4  rounded-full" />{" "}
             </h2>
+
             <a
               href={CONFIG.github}
               target="_blank"
@@ -677,7 +681,9 @@ export default function App() {
             <div>
               <h2 className="text-3xl lg:text-6xl font-black tracking-tighter mb-12 lg:mb-20 text-white">
                 Education
+                <div className="h-1 w-20  bg-gradient-to-r from-indigo-600 to-cyan-500  mt-4  rounded-full" />{" "}
               </h2>
+
               <div className="space-y-8 lg:space-y-12">
                 {EDUCATION.map((edu, i) => (
                   <motion.div
@@ -701,6 +707,7 @@ export default function App() {
             <div>
               <h2 className="text-3xl lg:text-6xl font-black tracking-tighter mb-12 lg:mb-20 text-white">
                 Certifications
+                <div className="h-1 w-20  bg-gradient-to-r from-indigo-600 to-cyan-500  mt-4  rounded-full" />{" "}
               </h2>
               <div className="grid grid-cols-1 gap-4">
                 {CERTIFICATIONS.map((cert, i) => (
