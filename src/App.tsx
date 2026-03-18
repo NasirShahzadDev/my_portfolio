@@ -536,7 +536,7 @@ export default function App() {
       {/* Experience Section */}
       <section
         id="experience"
-        className="py-20 lg:py-32 relative overflow-hidden bg-[#0a0f1e] border-y border-slate-900"
+        className="py-20 lg:py-32 relative overflow-hidden bg-[#111827] border-y border-slate-900"
       >
         <div className="absolute top-1/2 left-0 w-[40%] h-[40%] bg-cyan-600/10 blur-[150px] rounded-full -z-10" />
 
@@ -596,7 +596,7 @@ export default function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 lg:py-32 relative overflow-hidden bg-[#111827]">
+      <section id="projects" className="py-20 lg:py-32 relative overflow-hidden bg-[#0a0f1e]">
         <div className="absolute bottom-0 right-0 w-[50%] h-[50%] bg-cyan-600/10 blur-[160px] rounded-full -z-10" />
 
         <div className="container mx-auto px-6">
