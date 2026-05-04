@@ -112,8 +112,23 @@ export const HIGHLIGHTS = [
 
 export const EXPERIENCE = [
   {
+    company: "Malind Tech",
+    period: "April 2026 - Present",
+    role: "Senior Full Software Engineer",
+    location: "Lahore, Pakistan",
+    bullets: [
+      "Lead design and development of scalable full-stack systems using Node.js, NestJS, and modern frontend stacks.",
+      "Own architecture decisions for multi-tenant SaaS platforms focused on scalability, security, and maintainability.",
+      "Design and optimize RESTful and event-driven APIs using PostgreSQL and MongoDB.",
+      "Improve performance through query optimization, indexing strategies, caching, and Redis tuning.",
+      "Build cloud-native, event-driven workflows using AWS Lambda and distributed system patterns.",
+      "Define and enforce RBAC-based security across services and APIs.",
+      "Mentor developers and lead code reviews to maintain engineering standards.",
+    ],
+  },
+  {
     company: "Brackets Private Limited",
-    period: "October 2022 - Present",
+    period: "October 2022 - April 2026",
     role: "Software Engineer",
     location: "Lahore, Pakistan",
     bullets: [
