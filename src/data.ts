@@ -16,17 +16,17 @@ import {
 export const CONFIG = {
   name: "Nasir Shahzad",
   role: "Software Engineer",
-  experience: "3.5+ Years",
+  experience: "5 Years",
   email: "nasirshahzad.dev@gmail.com",
   phone: "+92 333 81 52 157",
   location: "Lahore, Pakistan",
   linkedin: "https://www.linkedin.com/in/nasir-shahzad-525110210/",
   github: "https://github.com/nasirshahzaddev",
-  resumeUrl: "/Nasir-CV-M.pdf",
+  resumeUrl: "/Nasir_Resume-1706.pdf",
   whatsapp: "https://wa.me/923338152157",
   profileImage: "/Nasir.jpg", // User's uploaded picture
   summary:
-    "Full-Stack Software Engineer (3.5+ years) with a strong backend focus on Node.js and NestJS. Skilled in building scalable, high-performance systems, designing robust architectures, optimizing databases, implementing event-driven workflows, and delivering production-ready full-stack applications across diverse domains.",
+    "Full-Stack Software Engineer (5 years) with a strong backend focus on Node.js and NestJS. Skilled in building scalable, high-performance systems, designing robust architectures, optimizing databases, implementing event-driven workflows, and delivering production-ready full-stack applications across diverse domains.",
 };
 
 export const SKILLS_CATEGORIES = [
@@ -47,7 +47,7 @@ export const SKILLS_CATEGORIES = [
   },
   {
     title: "Databases",
-    skills: ["MongoDB", "PostgreSQL"],
+    skills: ["MongoDB", "PostgreSQL", "Prisma", "TypeORM"],
     icon: Database,
   },
   {
@@ -142,9 +142,37 @@ export const EXPERIENCE = [
       "Mentored junior developers and participated in code reviews.",
     ],
   },
+  {
+    company: "Self-Employed",
+    period: "Feb 2021 - March 2022",
+    role: "Freelance Full Stack Developer",
+    location: "Remote",
+    bullets: [
+      "Developed web applications for international clients using Node.js, Express.js, React, MongoDB, and PostgreSQL.",
+      "Designed and implemented REST APIs, authentication systems, and database schemas for custom business solutions.",
+      "Collaborated directly with clients to gather requirements, define project scope, and deliver production-ready applications.",
+      "Built responsive frontend interfaces and integrated them with scalable backend services.",
+      "Managed project delivery, testing, deployment, and ongoing maintenance.",
+    ],
+  },
 ];
 
 export const PROJECTS = [
+  {
+    title: "ERP Platform",
+    subtitle: "Multi-Tenant Enterprise Resource Planning",
+    description:
+      "Built a modular ERP platform covering procurement, inventory, vendor management, warehouses, and approval workflows using schema-based multi-tenant isolation.",
+    tech: ["NestJS", "NodeJS", "Prisma", "PostgreSQL", "TypeScript"],
+    image:
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop",
+    details: [
+      "Designed schema-based tenant isolation for secure multi-tenant enterprise operations.",
+      "Implemented RBAC, audit logging, and scalable REST APIs across ERP modules.",
+      "Built procurement, inventory, and vendor management workflows with approval chains.",
+      "Designed optimized database schemas and transactional workflows for high-volume business processes.",
+    ],
+  },
   {
     title: "Cairasu (Home Care)",
     subtitle: "Multi-Tenant Caregiver Marketplace",

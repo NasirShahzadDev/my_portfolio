@@ -288,7 +288,7 @@ export default function App() {
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-12">
                 {[
-                  { label: "Years Industry Exp", value: "3.5+" },
+                  { label: "Years Industry Exp", value: "5" },
                   { label: "Key Enterprise Projects", value: "8+" },
                   { label: "Cloud Practitioner", value: "AWS" },
                 ].map((stat, i) => (
